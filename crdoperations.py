@@ -9,7 +9,7 @@ def create(key,value,timeout=0):
         print("key already exists") 
     else:
         if(key.isalpha()):
-            if len(f)<(4026*1020*4026) and value<=(16*4026*4026):  
+            if len(f)<(1024*1024*1024) and value<=(16*1024*1024):  
                 if timeout==0:
                     l=[value,timeout]
                 else:
